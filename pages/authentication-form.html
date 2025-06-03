@@ -35,6 +35,7 @@
               type="email"
               id="login-field"
               placeholder="use your email as login"
+              value="email"
               required
             />
           </div>
@@ -55,7 +56,7 @@
           <hr />
           <div class="form-submit-control">
             <input type="submit" value="Sign in" />
-            <a href="/#">Forgot your password?</a>
+            <a href="/#" class="forgot">Forgot your password?</a>
           </div>
         </form>
         <!-- Sign IN form ends here -->
@@ -119,12 +120,12 @@
             />
           </div>
           <div class="form-input-control">
-            <label for="avatar">Avatar</label>
+            <label for="avatar" class="bold">Avatar</label>
             <input type="file" id="avatar" />
           </div>
           <div class="form-group-horizontal-control">
             <div class="form-input-control">
-              <label for="state">State</label>
+              <label for="state" class="bold">State</label>
               <select id="state">
                 <option value="" disabled selected>Select your state</option>
                 <option value="TX">Texas</option>
@@ -132,8 +133,10 @@
                 <option value="SD">South Dakota</option>
               </select>
             </div>
+
             <div class="form-input-control">
-              <label for="city">City</label>
+              <div class="state-line"></div>
+              <label for="city" class="bold">City</label>
               <select id="city">
                 <option value="" disabled selected>Select your city</option>
                 <option value="new-york">New York</option>
@@ -143,7 +146,7 @@
             </div>
           </div>
           <div class="form-input-control">
-            <label>Gender</label>
+            <label class="bold">Gender</label>
             <div class="form-group-vertical-control">
               <div class="form-radio-control">
                 <input type="radio" id="male" name="gender" value="male" />

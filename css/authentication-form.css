@@ -58,7 +58,9 @@ p {
 .bold {
   font-weight: bold;
 }
-
+#sign-in-form {
+  border: 1px solid black;
+}
 a {
   color: #335eea;
   text-decoration: none;
@@ -72,6 +74,19 @@ input {
   width: 100%;
   height: 30px;
   padding: 5px;
+}
+.form-group-horizontal-control {
+  display: flex;
+  text-wrap: wrap;
+  justify-content: space-around;
+}
+
+.form-submit-control {
+  justify-self: center;
+}
+
+.forgot {
+  padding-left: 15px;
 }
 
 input[type="checkbox"],
@@ -95,7 +110,9 @@ input[type="submit"] {
   clear: left;
   cursor: pointer;
 }
-
+option {
+  height: 30px;
+}
 input[type="submit"]:hover {
   background: #294bbb;
 }
